@@ -79,7 +79,6 @@ if __name__ == '__main__':
                 snakeMatrix[llist[0].x][llist[0].y] = "."
                 displayMatrix()
                 llist.append(Coordinates(llist[-1].x - 1, llist[-1].y))
-                print("going to popleft")
                 llist.popleft()
         elif move == 's':
             if (llist[-1].x + 1) > 9 or snakeMatrix[llist[-1].x + 1][llist[-1].y] == '+':
@@ -96,7 +95,6 @@ if __name__ == '__main__':
                 snakeMatrix[llist[0].x][llist[0].y] = '.'
                 displayMatrix()
                 llist.append(Coordinates(llist[-1].x + 1, llist[-1].y))
-                print("going to popleft")
                 llist.popleft()
         elif move == 'a':
             if (llist[-1].y - 1) < 0 or snakeMatrix[llist[-1].x][llist[-1].y - 1] == '+':
@@ -113,7 +111,6 @@ if __name__ == '__main__':
                 snakeMatrix[llist[0].x][llist[0].y] = '.'
                 displayMatrix()
                 llist.append(Coordinates(llist[-1].x, llist[-1].y - 1))
-                print("going to popleft")
                 llist.popleft()
         elif move == 'd':
             if llist[-1].y + 1 > 9 or snakeMatrix[llist[-1].x][llist[-1].y + 1] == '+':
@@ -130,7 +127,6 @@ if __name__ == '__main__':
                 snakeMatrix[llist[0].x][llist[0].y] = '.'
                 displayMatrix()
                 llist.append(Coordinates(llist[-1].x, llist[-1].y + 1))
-                print("going to popleft")
                 llist.popleft()
         else:
             print("Wrong Input Please press right button\n")
