@@ -54,7 +54,7 @@ def timerCalc():
     while(true):
         displayMatrix()
         print("Enter Input:")
-        global x = input()
+        x = input()
         time.sleep(1)
 
 def snakeMoves():
